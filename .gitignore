@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build files
+build/
+dist/
+.cache/
+
+# Coverage reports
+coverage/
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Editor and system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# MongoDB database files (if running locally)
+data/db/
+
+# Production files
+*.tar.gz
+*.zip
+
+# Ignore uploads (if any)
+uploads/
+
+# React-specific files
+public/static/
+public/*.json
+*.lock
