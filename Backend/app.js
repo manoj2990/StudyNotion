@@ -17,7 +17,12 @@ app.use(cors({
     origin: CORS_ORIGIN,
     credentials: true
 })); 
-app.use(cors()); 
+app.use(cors({
+    origin: ['http://localhost:3000'],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  })); 
 app.use(cookieparser());
 
 app.use(express.json());

@@ -34,14 +34,21 @@ exports.createCategory = asyncHandler( async(req, res)=>{
 //showAllCategory
 exports.showAllCategories = asyncHandler( async(req,res)=>{
 
+  try {
     const AllCategory = await categoryModel.find({},{name:true, description:true})
-
+  
     if(!AllCategory){
       return res. ApiError(401, "Unable to get Category")
     }
-
+  
     return res.status(200)
     .json( new ApiResponse(200,AllCategory, "Get All Category succesfully"))
+    
+  } catch (error) {
+    console.error("Error showAllCategories:", error);
+    return res. ApiError(500, "An error occurred while showAllCategories")
+  }
+
 })
 
 

@@ -1,6 +1,6 @@
 
 module.exports = {
-  MONGODB_URI: `${process.env.MONGODB_URI}/${process.env.DB_NAME}`,
+  // MONGODB_URI: `${process.env.MONGODB_URI}/${process.env.DB_NAME}?retryWrites=true&w=majority`,
 
   PORT: `${process.env.PORT}`,
   CORS_ORIGIN: `${process.env.CORS_ORIGIN}`,
