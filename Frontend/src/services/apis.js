@@ -15,8 +15,7 @@ export const profileEndpoints = {
   GET_USER_DETAILS_API: BASE_URL + "/profile/getUserDetails",
   GET_USER_ENROLLED_COURSES_API: BASE_URL + "/profile/getEnrolledCourses",
   GET_INSTRUCTOR_DATA_API: BASE_URL + "/profile/instructorDashboard"
-  // http://localhost:4000/api/v1/profile/getEnrolledCourses
-  // /api/v1/profile/getEnrolledCourses
+  
 }
 
 // STUDENTS ENDPOINTS
@@ -41,7 +40,6 @@ export const courseEndpoints = {
   DELETE_SECTION_API: BASE_URL + "/course/deleteSection",
   DELETE_SUBSECTION_API: BASE_URL + "/course/deleteSubSection",
   DELETE_COURSE_API: BASE_URL + "/course/deleteCourse",
-  // DELETE_COURSE_API: "http://localhost:4000/api/v1/course/deleteCourse",
   GET_FULL_COURSE_DETAILS_AUTHENTICATED:
     BASE_URL + "/course/getFullCourseDetails",
   LECTURE_COMPLETION_API: BASE_URL + "/course/updateCourseProgress",
@@ -56,7 +54,7 @@ export const ratingsEndpoints = {
 // CATAGORIES API
 export const categories = {
   CATEGORIES_API: BASE_URL + "/course/showAllCategories",
-  // CATEGORIES_API:"http://localhost:4000/api/v1/course/showAllCategories",
+  
 }
 
 // CATALOG PAGE DATA 

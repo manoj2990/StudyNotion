@@ -64,7 +64,7 @@ const { auth, isInstructor, isStudent, isAdmin } = require("../../middlewares/au
 router.post("/createCourse", auth, isInstructor, createCourse );
 // Edit Course routes
 router.post("/editCourse", auth, isInstructor, editCourse)
-// delete Course routes "http://localhost:4000/api/v1/course/deleteCourse"
+// delete Course routes 
 router.delete("/deleteCourse", auth, isInstructor,  deleteCourse)
 //-->Add a Section to a Course
 router.post("/addSection", auth, isInstructor, createSection);
