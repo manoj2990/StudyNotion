@@ -24,7 +24,7 @@
 const { cloudinaryConnect } = require("../Backend/configration/cloudinaryConfigration");
 const app = require("./app");
 const { PORT } = require('./constant');
-
+const dbconnection = require('./configration/databaseConfigration')
 // Connect to Cloudinary and Database
 cloudinaryConnect();
 
