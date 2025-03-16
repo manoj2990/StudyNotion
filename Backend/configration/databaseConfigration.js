@@ -18,7 +18,7 @@
           });
         console.log(`MongoDB connected successfull...`)
     } catch (error) {
-        console.log(`dbconnection is failed!!!`, error);
+        console.log(`dbconnection is failed!!!`, error.message);
         process.exit(1);
     }
 
