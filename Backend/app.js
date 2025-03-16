@@ -36,6 +36,11 @@ app.get('/api/v1/res', (req, res) => {
     res.send('Hello, World*************!'); 
 });  
 
+app.get('/', (req, res) => {
+    console.log('Hello, World!');
+    res.send('server api call is wroking............'); 
+});  
+
 
 
 
