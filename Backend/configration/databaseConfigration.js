@@ -11,6 +11,7 @@
   const dbconnection = async() =>{
 
     try {
+        console.log("MongoDB url -->", `${MONGODB_URI}`)
         dbconnectionInstans = await mongoose.connect(`${MONGODB_URI}`);
         console.log(`MongoDB connected successfull...`)
     } catch (error) {
