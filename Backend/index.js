@@ -21,8 +21,8 @@
 // ))
 
 require("dotenv").config();
-const { cloudinaryConnect } = require("../Backend/configration/cloudinaryConfigration");
 const app = require("./app");
+const { cloudinaryConnect } = require("../Backend/configration/cloudinaryConfigration");
 const dbconnection = require('./configration/databaseConfigration');
 
 // Connect to Cloudinary and Database
