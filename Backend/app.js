@@ -14,9 +14,7 @@ const globalApiErrorHandler = require("./middlewares/globalApiErrorHandler");
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        "https://study-notion-five-tau.vercel.app",
-        "https://study-notion-git-main-manojmeena2990-gmailcoms-projects.vercel.app",
-        "https://study-notion-manojmeena2990-gmailcoms-projects.vercel.app"
+        "https://study-notion-manoj2990.vercel.app"
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
