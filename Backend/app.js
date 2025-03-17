@@ -18,7 +18,7 @@ const globalApiErrorHandler = require("./middlewares/globalApiErrorHandler");
 //     credentials: true
 // })); 
 app.use(cors({
-    origin: ['http://localhost:3000', CORS_ORIGIN],
+    origin: ['http://localhost:3000', 'https://study-notion-five-tau.vercel.app/', CORS_ORIGIN],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
