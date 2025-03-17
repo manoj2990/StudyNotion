@@ -7,16 +7,10 @@ const cors = require('cors');
 const fileUpload = require("express-fileupload");
 
 const Collection_of_all_Routes = require("../Backend/routes/routesCollection.routes");
-const { CORS_ORIGIN } = require("../Backend/constant");
+
 
 const globalApiErrorHandler = require("./middlewares/globalApiErrorHandler");
 
-
-//middlewares
-// app.use(cors({
-//     origin: CORS_ORIGIN,
-//     credentials: true
-// })); 
 app.use(cors({
     origin: [
         "http://localhost:3000",
@@ -44,10 +38,6 @@ app.use(globalApiErrorHandler);
 
 //router declearation
 Collection_of_all_Routes(app);
-app.get('/api/v1/res', (req, res) => {
-    console.log('api call at /api/v1/res');
-    res.send('Hello, World*************!'); 
-});  
 
 app.get('/', (req, res) => {
     console.log('api call at /');

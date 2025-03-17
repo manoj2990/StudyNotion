@@ -10,11 +10,8 @@
   const dbconnection = async() =>{
 
     try {
-        console.log("MongoDB url -->", `${process.env.MONGODB_URI}`)
-        dbconnectionInstans = await mongoose.connect(`${process.env.MONGODB_URI}`,{
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        console.log(`MongoDB connection start...`)
+        dbconnectionInstans = await mongoose.connect(`${process.env.MONGODB_URI}`);
         console.log(`MongoDB connected successfull...`)
     } catch (error) {
         console.log(`dbconnection is failed!!!`, error.message);

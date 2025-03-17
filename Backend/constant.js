@@ -1,9 +1,7 @@
 
 module.exports = {
-  // MONGODB_URI: `${process.env.MONGODB_URI}/${process.env.DB_NAME}?retryWrites=true&w=majority`,
 
   PORT: `${process.env.PORT}`,
-  CORS_ORIGIN: `${process.env.CORS_ORIGIN}`,
   NODE_ENV : `${process.env.NODE_ENV}`,
 
   ACCESS_TOKEN_SECRET: `${process.env.ACCESS_TOKEN_SECRET}`,
