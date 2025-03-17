@@ -23,7 +23,6 @@
 require("dotenv").config();
 const { cloudinaryConnect } = require("../Backend/configration/cloudinaryConfigration");
 const app = require("./app");
-const { PORT } = require('./constant');
 const dbconnection = require('./configration/databaseConfigration');
 
 // Connect to Cloudinary and Database
@@ -35,7 +34,7 @@ dbconnection()
 
     // Start the server after a successful database connection
     app.listen(process.env.PORT || 5000, () => {
-      console.log(`Server is running at port: ${PORT}`);
+      console.log(`Server is running at port: ${process.env.PORT}`);
     });
 
   })

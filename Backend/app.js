@@ -13,16 +13,16 @@ const globalApiErrorHandler = require("./middlewares/globalApiErrorHandler");
 
 
 //middlewares
-app.use(cors({
-    origin: CORS_ORIGIN,
-    credentials: true
-})); 
 // app.use(cors({
-//     origin: ['http://localhost:3000'],
-//     credentials: true,
-//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-//     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
-//   })); 
+//     origin: CORS_ORIGIN,
+//     credentials: true
+// })); 
+app.use(cors({
+    origin: ['http://localhost:3000', CORS_ORIGIN],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  })); 
 app.use(cookieparser());
 
 app.use(express.json());
@@ -37,12 +37,12 @@ app.use(globalApiErrorHandler);
 //router declearation
 Collection_of_all_Routes(app);
 app.get('/api/v1/res', (req, res) => {
-    console.log('Hello, World!');
+    console.log('api call at /api/v1/res');
     res.send('Hello, World*************!'); 
 });  
 
 app.get('/', (req, res) => {
-    console.log('Hello, World!');
+    console.log('api call at /');
     res.send('server api call is wroking............'); 
 });  
 

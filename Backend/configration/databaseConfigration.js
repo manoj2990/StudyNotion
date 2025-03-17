@@ -1,7 +1,6 @@
  
 
  require("dotenv").config();
- const {MONGODB_URI} = require('../constant');
  const mongoose = require("mongoose");
  
 
