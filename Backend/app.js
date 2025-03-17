@@ -18,11 +18,19 @@ const globalApiErrorHandler = require("./middlewares/globalApiErrorHandler");
 //     credentials: true
 // })); 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://study-notion-five-tau.vercel.app/', CORS_ORIGIN],
+    origin: [
+        "http://localhost:3000",
+        "https://study-notion-five-tau.vercel.app",
+        "https://study-notion-git-main-manojmeena2990-gmailcoms-projects.vercel.app",
+        "https://study-notion-manojmeena2990-gmailcoms-projects.vercel.app"
+    ],
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
-  })); 
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Accept"]
+}));
+
+
+
 app.use(cookieparser());
 
 app.use(express.json());
