@@ -15,7 +15,7 @@ app.use(cors({
     origin: [
         "http://localhost:3000",
         "https://study-notion-manoj2990.vercel.app",
-        "https://shivam-study-notion.netlify.app/"
+        "https://shivam-study-notion.netlify.app"
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
